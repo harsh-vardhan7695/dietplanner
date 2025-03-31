@@ -1,3 +1,4 @@
+
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
@@ -13,7 +14,7 @@ const Header = () => {
           <img 
             src="/lovable-uploads/488dc5b7-1afd-424d-bdf0-a8cc88163ec1.png" 
             alt="DietPlanner Logo" 
-            className="h-12 w-auto"
+            className="h-13 w-auto"
           />
           <span className="text-primary font-bold text-xl">DietPlanner</span>
         </div>
