@@ -13,7 +13,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/488dc5b7-1afd-424d-bdf0-a8cc88163ec1.png" 
                 alt="DietPlanner Logo" 
-                className="h-10 w-auto"
+                className="h-12 w-auto"
               />
               <span className="text-primary font-bold text-xl">DietPlanner</span>
             </div>
