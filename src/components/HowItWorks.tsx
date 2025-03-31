@@ -1,10 +1,23 @@
 
 import { ArrowRight } from "lucide-react";
+import { WavyBackground } from "@/components/ui/wavy-background";
 
 const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="py-16 md:py-24">
-      <div className="section-container">
+    <section id="how-it-works" className="py-16 md:py-24 relative overflow-hidden">
+      <WavyBackground 
+        containerClassName="absolute inset-0 h-full"
+        colors={["#4ade80", "#22c55e", "#16a34a", "#15803d", "#14532d"]} 
+        backgroundFill="#f8fafc"
+        blur={10}
+        speed="slow"
+        waveWidth={40}
+        waveOpacity={0.3}
+      >
+        {/* Empty - using this for background only */}
+      </WavyBackground>
+      
+      <div className="section-container relative z-10">
         <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
             How DietPlanner Works
