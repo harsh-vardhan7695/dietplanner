@@ -11,6 +11,11 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full border-b bg-background/90 backdrop-blur-sm">
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
+          <img 
+            src="/dietplanner-logo.png" 
+            alt="DietPlanner Logo" 
+            className="h-8 w-auto"
+          />
           <span className="text-primary font-bold text-xl">DietPlanner</span>
         </div>
         
@@ -27,7 +32,6 @@ const Header = () => {
             </a>
           </nav>
           <ThemeToggle />
-          <Button className="button-hover-effect">Get Started</Button>
         </div>
         
         <div className="flex md:hidden items-center gap-4">
@@ -62,7 +66,6 @@ const Header = () => {
             >
               Join Waitlist
             </a>
-            <Button className="w-full">Get Started</Button>
           </nav>
         </div>
       )}
