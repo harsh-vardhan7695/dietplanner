@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "sonner";
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
 
 const WaitlistSection = () => {
   const [email, setEmail] = useState("");
@@ -19,12 +20,13 @@ const WaitlistSection = () => {
     setIsSubmitting(true);
     
     try {
-      // For now, we're simulating the API call since Supabase isn't connected yet
-      // Once Supabase is connected, this would be replaced with actual database code
-      // Example: await supabase.from('waitlist').insert([{ email }])
+      const { error } = await supabase
+        .from('waitlist')
+        .insert({ email });
       
-      // Simulate API call delay
-      await new Promise(resolve => setTimeout(resolve, 1500));
+      if (error) {
+        throw error;
+      }
       
       // Success toast
       toast.success("You've been added to our waitlist!");
