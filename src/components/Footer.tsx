@@ -12,11 +12,11 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img 
-                src="/dietplanner-logo.png" 
+                src="/lovable-uploads/11c98b50-4c96-4fbf-9b63-f097622d638f.png" 
                 alt="DietPlanner Logo" 
                 className="h-8 w-auto"
               />
-              <h3 className="text-lg font-medium">DietPlanner</h3>
+              <span className="text-primary font-bold text-xl">DietPlanner</span>
             </div>
             <p className="text-sm text-muted-foreground">
               AI-powered nutrition planning for a healthier life.
@@ -51,11 +51,6 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="text-sm font-medium">Contact</h4>
             <ul className="space-y-2 text-sm">
-              <li>
-                <a href="mailto:info@dietplanner-app.com" className="text-muted-foreground hover:text-foreground">
-                  info@dietplanner-app.com
-                </a>
-              </li>
               <li>
                 <a 
                   href="https://www.linkedin.com/company/dietplanner" 

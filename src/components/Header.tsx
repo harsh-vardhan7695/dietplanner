@@ -12,7 +12,7 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <div className="flex items-center gap-2">
           <img 
-            src="/dietplanner-logo.png" 
+            src="/lovable-uploads/11c98b50-4c96-4fbf-9b63-f097622d638f.png" 
             alt="DietPlanner Logo" 
             className="h-8 w-auto"
           />

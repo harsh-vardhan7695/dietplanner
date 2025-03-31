@@ -8,7 +8,7 @@ const WaitlistSection = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     if (!email || !email.includes("@")) {
@@ -18,12 +18,23 @@ const WaitlistSection = () => {
     
     setIsSubmitting(true);
     
-    // Simulate API call
-    setTimeout(() => {
+    try {
+      // For now, we're simulating the API call since Supabase isn't connected yet
+      // Once Supabase is connected, this would be replaced with actual database code
+      // Example: await supabase.from('waitlist').insert([{ email }])
+      
+      // Simulate API call delay
+      await new Promise(resolve => setTimeout(resolve, 1500));
+      
+      // Success toast
       toast.success("You've been added to our waitlist!");
       setEmail("");
+    } catch (error) {
+      console.error("Error adding to waitlist:", error);
+      toast.error("Failed to join waitlist. Please try again later.");
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
 
   return (
