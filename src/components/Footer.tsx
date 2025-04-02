@@ -1,3 +1,4 @@
+
 import { ThemeToggle } from "@/components/ThemeToggle";
 import { Linkedin } from "lucide-react";
 
@@ -11,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img 
-                src="/lovable-uploads/488dc5b7-1afd-424d-bdf0-a8cc88163ec1.png" 
+                src="/lovable-uploads/710efea7-9af4-413e-aefb-421c4f794365.png" 
                 alt="DietPlanner Logo" 
                 className="h-16 w-auto"
               />
