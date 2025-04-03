@@ -135,6 +135,45 @@ export type Database = {
         }
         Relationships: []
       }
+      visitor_analytics: {
+        Row: {
+          device_type: string | null
+          id: string
+          ip_address: string | null
+          page_visited: string
+          referrer: string | null
+          session_id: string
+          user_agent: string | null
+          user_id: string | null
+          visit_duration: number | null
+          visited_at: string
+        }
+        Insert: {
+          device_type?: string | null
+          id?: string
+          ip_address?: string | null
+          page_visited: string
+          referrer?: string | null
+          session_id: string
+          user_agent?: string | null
+          user_id?: string | null
+          visit_duration?: number | null
+          visited_at?: string
+        }
+        Update: {
+          device_type?: string | null
+          id?: string
+          ip_address?: string | null
+          page_visited?: string
+          referrer?: string | null
+          session_id?: string
+          user_agent?: string | null
+          user_id?: string | null
+          visit_duration?: number | null
+          visited_at?: string
+        }
+        Relationships: []
+      }
       waitlist: {
         Row: {
           created_at: string

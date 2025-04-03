@@ -5,8 +5,11 @@ import Features from "@/components/Features";
 import HowItWorks from "@/components/HowItWorks";
 import WaitlistSection from "@/components/WaitlistSection";
 import Footer from "@/components/Footer";
+import { useVisitorTracking } from "@/hooks/useVisitorTracking";
 
 const Index = () => {
+  useVisitorTracking('/');
+  
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
