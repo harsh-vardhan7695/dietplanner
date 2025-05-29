@@ -25,6 +25,12 @@ const WaitlistSection = () => {
         .insert({ email });
       
       if (error) {
+        // Handle duplicate email error specifically
+        if (error.code === '23505') {
+          toast.error("This email is already on our waitlist!");
+          setEmail("");
+          return;
+        }
         throw error;
       }
       
